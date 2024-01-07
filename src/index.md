@@ -1,9 +1,5 @@
 ---
 layout: layouts/home.html
-title: "Hello World"
-url: "./style/"
+title: "Transactions list"
+url: "./home/"
 ---
-
-# Hello world
-
-View <a href="{{ url }}">Style Guide</a>

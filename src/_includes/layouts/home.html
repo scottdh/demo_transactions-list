@@ -1,8 +1,20 @@
 {% extends "layouts/base.html" %} {% block content %}
-<div class="panel">
-  <div class="wrapper">
-    <div class="flow">{{ content | safe }}</div>
-  </div>
+
+<div class="device-screen">
+  <ul>
+    {% for transaction in transactions %}
+    <li class="transaction-cell">
+      <div class="transaction-cell__img">
+        <img src="{{ merchants[transaction.counter_party].logo }}" alt="" />
+      </div>
+      <div class="transaction-cell__leading">
+        {{ transaction.counter_party }}
+      </div>
+      <div class="transaction-cell__trailing">£{{ transaction.value }}</div>
+    </li>
+
+    {% endfor %}
+  </ul>
 </div>
 
 {% endblock %}

@@ -1,0 +1,16 @@
+[
+  {
+    "transaction_id": "001",
+    "counter_party": "McDonald's",
+    "value": "10.50",
+    "date": "09-01-24",
+    "time": "09:34"
+  },
+  {
+    "transaction_id": "002",
+    "counter_party": "BT",
+    "value": "29.99",
+    "date": "10-01-24",
+    "time": "04:00"
+  }
+]

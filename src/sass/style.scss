@@ -6,10 +6,8 @@
 
 /* Utilities */
 @use "./utilities/flow";
-@use "./utilities/grid";
-@use "./utilities/wrapper";
+@use "./utilities/device-screen";
 @use "./utilities/sr-only";
-@use "./utilities/panel";
 
 /* Components */
 @use "./components/button";
@@ -18,7 +16,14 @@
 @use "./home";
 
 body {
-  background-color: var(--color-z0);
+  background-color: black;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :focus {
