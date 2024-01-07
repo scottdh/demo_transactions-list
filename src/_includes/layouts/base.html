@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% include "partials/meta-info.html" %}
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/affb5d6f08.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/affb5d6f08.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      media="print"
+      href="/fonts/fonts.css"
+      onload="this.media='all'"
+    /> -->
+  </head>
+  <body>
+    <main tabindex="-1" id="main-content">
+      {% block content %}
+      <p>
+        Here is some placeholder content that will render if a template doesn’t
+        define a block.
+      </p>
+      {% endblock %}
+    </main>
+  </body>
+</html>

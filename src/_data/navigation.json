@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Page 1",
+      "url": "/page1/"
+    },
+    {
+      "text": "Page 2",
+      "url": "/page 2/"
+    }
+  ]
+}

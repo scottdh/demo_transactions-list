@@ -1,0 +1,34 @@
+button,
+.button,
+input[type="submit"] {
+  font-weight: 400;
+  display: block;
+  width: fit-content;
+  border: none;
+  text-decoration: none;
+  // text-align: start;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  background: transparent;
+  line-height: 1.3; // must be same as form field
+  padding: 0;
+
+  &::after {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    font-size: 0.7em;
+    content: "\f178";
+    margin-inline-start: 0.25em;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  &[data-type="primary"] {
+    color: var(--color-primary);
+  }
+}
