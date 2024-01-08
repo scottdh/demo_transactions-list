@@ -1,6 +1,8 @@
 {% extends "layouts/base.html" %} {% block content %}
 
 <div class="device-screen">
+  {% for date, transactions in transactions.groupedTransactions %}
+  <h4>{{ date | dateFilter }}</h4>
   <ul>
     {% for transaction in transactions %}
     <li class="transaction-cell">
@@ -9,15 +11,14 @@
       </div>
       <div class="transaction-cell__leading">
         {{ transaction.CounterParty }} <br />
-        {{ transaction.BookingDateTime | dateFilter }}
       </div>
       <div class="transaction-cell__trailing">
         £{{ transaction.Amount.Amount }}
       </div>
     </li>
-
     {% endfor %}
   </ul>
+  {% endfor %}
 </div>
 
 {% endblock %}

@@ -1,0 +1,13 @@
+{# _includes/partials/transactions.html #} {% for date, transactions in
+groupedTransactions %}
+<h3>{{ date }}</h3>
+<ul>
+  {% for transaction in transactions %}
+  <li>
+    TransactionId: {{ transaction.TransactionId }}, CounterParty: {{
+    transaction.CounterParty }}, Amount: {{ transaction.Amount.Amount }} {{
+    transaction.Amount.Currency }}, Status: {{ transaction.Status }}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
