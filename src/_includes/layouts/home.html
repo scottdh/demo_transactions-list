@@ -5,12 +5,15 @@
     {% for transaction in transactions %}
     <li class="transaction-cell">
       <div class="transaction-cell__img">
-        <img src="{{ merchants[transaction.counter_party].logo }}" alt="" />
+        <img src="{{ merchants[transaction.CounterParty].logo }}" alt="" />
       </div>
       <div class="transaction-cell__leading">
-        {{ transaction.counter_party }}
+        {{ transaction.CounterParty }} <br />
+        {{ transaction.BookingDateTime | dateFilter }}
       </div>
-      <div class="transaction-cell__trailing">£{{ transaction.value }}</div>
+      <div class="transaction-cell__trailing">
+        £{{ transaction.Amount.Amount }}
+      </div>
     </li>
 
     {% endfor %}

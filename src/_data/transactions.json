@@ -1,16 +1,38 @@
 [
   {
-    "transaction_id": "001",
-    "counter_party": "McDonald's",
-    "value": "10.50",
-    "date": "09-01-24",
-    "time": "09:34"
+    "TransactionId": "001",
+    "TransactionReference": "",
+    "CounterParty": "McDonald's",
+    "Amount": {
+      "Amount": "10.50",
+      "Currency": "GBP"
+    },
+    "CreditDebitIndicator": "Debit",
+    "Status": "Booked",
+    "BookingDateTime": "2024-05-03T14:22:09+00:00"
   },
   {
-    "transaction_id": "002",
-    "counter_party": "BT",
-    "value": "29.99",
-    "date": "10-01-24",
-    "time": "04:00"
+    "TransactionId": "002",
+    "TransactionReference": "",
+    "CounterParty": "BT",
+    "Amount": {
+      "Amount": "29.99",
+      "Currency": "GBP"
+    },
+    "CreditDebitIndicator": "Debit",
+    "Status": "Booked",
+    "BookingDateTime": "2024-05-02T14:22:12+03:22"
+  },
+  {
+    "TransactionId": "003",
+    "TransactionReference": "",
+    "CounterParty": "McDonald's",
+    "Amount": {
+      "Amount": "6.80",
+      "Currency": "GBP"
+    },
+    "CreditDebitIndicator": "Debit",
+    "Status": "Booked",
+    "BookingDateTime": "2024-05-02T14:22:12+03:22"
   }
 ]
